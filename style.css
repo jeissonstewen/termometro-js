@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    width: 100vw;
+    height: 100vh;    
+}
+body{
+    padding: 50px;
+    
+}
+main{
+    border: 1px solid;
+    width: 100%;
+    height: 100%;
+}
+.contenedor{
+    display: grid;
+    grid-template-areas: 
+    'titulo titulo titulo'
+    'parte1 parte1 termometro'
+    'parte2 parte2 termometro';
+    height: 100%;
+    grid-template-rows: 1fr repeat(2, 2fr);
+    grid-template-columns: 2fr 2fr 1fr;
+    
+}
+.contenedor__titulo{
+    text-align: center;
+    grid-area: titulo;
+
+}
+.parte1{
+    grid-area: parte1;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: column;
+}
+.parte2{
+    grid-area: parte2;
+    border: 1px solid blue;
+    display: flex;
+    justify-content: space-around;
+}
+.parte3{
+    grid-area: termometro;
+    border: 1px solid green;
+}
+.resultado{
+    width: 50px;
+    height: 50px;
+    border: 1px solid ;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.boton{
+    width: 150px;
+    height: 50px;
+    border: 1px solid ;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.termometro{
+    height: 110px;
+    width: 30px;
+    border: 1px solid ;
+    transform: rotate(180deg);
+}
+.termometro__mercurio{
+    height: 100px;
+    width: 99%;
+    background-color: red;
+}

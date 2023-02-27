@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script defer src="./main.js"></script>
+
 </head>
 <body>
     <main>
@@ -14,19 +16,25 @@
                 Termometro "Digital"
             </h2>
             <div class="parte1">
-                <input type="text" class="temperatura">
+                <input type="text" class="temperatura" id="valor">
                 <div class="options">
-                    <input type="radio" name="temp" id="">
-                    <input type="radio" name="temp" id="">
+                    <p>
+                        <input type="radio" name="temp" id="F" class="temp">
+                        <label for="radio">°F a °C</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="temp" id="C" class="temp">
+                        <label for="radio">°C a °F</label>
+                    </p>
                 </div>
             </div>
             <div class="parte2">
                 <div class="resultado">0°</div>
-                <div class="boton">convertir</div>
+                <div id="boton" class="boton">convertir</div>
             </div>
             <div class="parte3">
                 <div class="termometro">
-                    <div class="termometro__mercurio">ha</div>
+                    <div class="termometro__mercurio"></div>
                 </div>
             </div>
         </div>

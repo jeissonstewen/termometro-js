@@ -3,18 +3,24 @@
     padding: 0;
     box-sizing: border-box;
 }
-html, body{
-    width: 100vw;
+html{
+    height: 100%;
+}
+body{
     height: 100vh;    
 }
 body{
     padding: 10px;
+    background-color: #2998D6;
     
 }
 main{
-    border: 1px solid;
-    width: 100%;
-    height: 100%;
+    border: none;
+    width: 60%;
+    height: 70vh;
+    margin: 15vh auto;
+    background-color: #F2F8F7;
+    border-radius: 15px;
 }
 .contenedor{
     display: grid;
@@ -25,20 +31,20 @@ main{
     height: 100%;
     grid-template-rows: 1fr repeat(2, 2fr);
     grid-template-columns: 2fr 2fr 1fr;
-    
 }
 .contenedor__titulo{
     grid-area: titulo;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    color: #2998D6;
 }
 .parte1{
     grid-area: parte1;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
     gap: 10px;
 }
 .options{
@@ -49,6 +55,8 @@ input[type=text]{
     height: 30%;
     font-size: 30px;
     text-align: center;
+    border: 2px solid #2998D6;
+    border-radius: 15px;
 }
 .parte2{
     grid-area: parte2;
@@ -63,31 +71,37 @@ input[type=text]{
     align-items: center;
 }
 .resultado{
-    width: 50px;
-    height: 50px;
-    border: 1px solid ;
+    width: 12%;
+    height: 50%;
+    border: 3px solid #7FC6F3;
+    border-radius: 15px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 .boton{
-    width: 150px;
-    height: 50px;
-    border: 1px solid ;
+    width: 25%;
+    height: 60%;
+    border: none;
     border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
     cursor: pointer;
+    color: rgba(0, 0, 0, 0.37);
+    background-color: #928992;
+    font-size: x-large;
 }
 .termometro{
-    height: 100px;
-    width: 30px;
-    border: 1px solid ;
+    height: 70%;
+    width: 30%;
+    border: 1px solid #928992;
     transform: rotate(180deg);
+    border-radius: 2px;
 }
 .termometro__mercurio{
     height: 100%;
     width: 100%;
+    border-radius: 2px;
     background-color: red;
 }
